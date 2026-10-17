@@ -1,9 +1,10 @@
 from django.conf import settings
 from django.db import models
 
-# Ajustar este import al nombre real de la app/módulo del integrante 1.
-# Se asume una app "solicitudes" con un modelo SolicitudCredito.
-from solicitudes.models import SolicitudCredito
+# La app del integrante 1 en tu repo es apps/clientes_solicitudes/.
+# confirmar el nombre exacto de la clase (se asume SolicitudCredito;
+# podría llamarse solo "Solicitud")
+from apps.clientes_solicitudes.models import SolicitudCredito
 
 
 class NivelRiesgo(models.TextChoices):
